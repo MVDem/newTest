@@ -1,0 +1,142 @@
+.footer {
+  background-color: $dark-blue;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &__wrapper {
+    min-height: 100px;
+    @include flex-center-space-between();
+    @include tablet {
+      @include flex-center-colomn();
+    }
+  }
+
+  &__copy {
+    @include font(13px, 16px, 400);
+    color: $light-gray;
+    text-transform: uppercase;
+  }
+
+  &__copy > span {
+    text-transform: lowercase;
+  }
+
+  &__partners {
+    display: flex;
+    flex-direction: row;
+    color: $light-gray;
+    @include font(13px, 16px, 400);
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__qiwimoney {
+    margin-left: 68px;
+    position: relative;
+    @include mobile {
+      margin: 10px 30px;
+    }
+  }
+  &__qiwimoney:after {
+    content: url('../../img/qiwi.svg');
+    position: absolute;
+    left: -30px;
+    top: -2px;
+    width: 15px;
+    height: 12px;
+  }
+
+  &__yandexmoney {
+    margin-left: 68px;
+    position: relative;
+    @include mobile {
+      margin: 10px 30px;
+    }
+  }
+  &__yandexmoney:after {
+    content: url('../../img/yandex.svg');
+    position: absolute;
+    left: -30px;
+    top: -2px;
+    width: 15px;
+    height: 12px;
+  }
+
+  &__webmoney {
+    margin-left: 68px;
+    position: relative;
+    @include mobile {
+      margin: 10px 30px;
+    }
+  }
+  &__webmoney:after {
+    content: url('../../img/webmoney.png');
+    position: absolute;
+    left: -30px;
+    top: -2px;
+    width: 15px;
+    height: 12px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__contact {
+    color: $light-gray;
+    @include font(13px, 16px, 400);
+    text-decoration: none;
+  }
+
+  &__mail {
+    position: relative;
+  }
+  &__mail::after {
+    content: url('../../img/email.svg');
+    position: absolute;
+    left: -30px;
+    top: -2px;
+    width: 15px;
+    height: 12px;
+  }
+  &__vk {
+    margin-left: 65px;
+    position: relative;
+  }
+
+  &__vk::after {
+    content: url('../../img/vk.svg');
+    position: absolute;
+    left: -20px;
+    top: 2px;
+    width: 11px;
+    height: 13px;
+  }
+
+  &__slash {
+    position: relative;
+  }
+
+  &__slash::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -50%;
+    background-color: $light-gray;
+    width: 1px;
+    height: 18px;
+    transform: translateY(-50%);
+    @include tablet {
+      transform: translateY(0%);
+      transform: translateX(-50%);
+      width: 100px;
+      height: 1px;
+    }
+  }
+}

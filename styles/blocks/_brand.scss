@@ -1,0 +1,78 @@
+.brand {
+  min-height: 850px;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-image: url('../../img/brand.jpg');
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+  @include mobile {
+    height: auto;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-auto-rows: minmax(200px, auto);
+  }
+
+  &__title {
+    padding-top: 203px;
+    max-width: 780px;
+    font-family: Raleway;
+    @include font(48px, 56px, 800);
+    text-transform: uppercase;
+    @include mobile {
+      @include font(20px, 24px, 800);
+    }
+  }
+
+  &__title-blue {
+    color: $light-blue;
+  }
+
+  &__description {
+    margin-top: 80px;
+    margin-bottom: 5px;
+    @include font(20px, 24px, 700);
+    @include mobile {
+      @include font(16px, 19px, 800);
+    }
+  }
+
+  &__item {
+    @include font(20px, 24px, 400);
+    @include mobile {
+      @include font(16px, 19px, 400);
+    }
+  }
+
+  &__buttons {
+    margin-top: 80px;
+    @include mobile {
+      @include font(16px, 19px, 800);
+      @include flex-center-colomn();
+    }
+  }
+
+  &__button {
+    width: 183px;
+    height: 43px;
+    border-radius: 4px;
+    border: 1px solid $grey-color;
+    margin-right: 30px;
+    text-transform: uppercase;
+    @include font(13px, 16px, 400);
+    @include mobile {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button-order {
+    background-color: $light-blue;
+  }
+
+  &____button-more {
+    background-color: $white-color;
+  }
+}

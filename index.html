@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    >
+    <title>Тестовое задание</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="#" class="header__title">
+            LoremIpsum.<span class="header__subtitle">Net</span>
+          </a>
+          <div class="header__dropdown">
+            <ul class="header__contrls">
+              <li>
+                <a class="header__link header__link-active" href="#">Бизнес</a>
+              </li>
+              <li><a class="header__link" href="#">О нас</a></li>
+              <li><a class="header__link" href="#">Цены</a></li>
+              <li><a class="header__link" href="#">Оформить заказ</a></li>
+            </ul>
+            <button class="header__burger" type="button" id="burger">
+              <img src="./img/burger.svg" alt="burger" width="32" height="23">
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="brand">
+        <div class="brand__wrapper container">
+          <h2 class="brand__title">
+            <span class="brand__title-blue">Lorem ipsum </span> dolor sit amet
+            consectetur
+            <span class="brand__title-blue">adipiscing</span>
+          </h2>
+          <div>
+            <p class="brand__description">
+              At vero eos et accusamus et iusto odio dignissimos ducimus!
+            </p>
+            <ul class="theses">
+              <li class="brand__item">- Totam rem aperiam eaque ipsa</li>
+              <li class="brand__item">
+                - Sit voluptatem accusantium doloremque laudantium
+              </li>
+              <li class="brand__item">
+                - Sed ut perspiciatis, unde omnis iste natus error
+              </li>
+            </ul>
+          </div>
+          <div class="brand__buttons">
+            <button class="brand__button brand__button-order">заказать</button>
+            <button class="brand__button brand__button-more">подробнее</button>
+          </div>
+        </div>
+      </section>
+      <section class="order">
+        <div class="order__wrapper">
+          <h3 class="order__title">
+            Оформление <span class="order__title-blue">заказа</span>
+          </h3>
+          <p class="order__subtitle">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </p>
+          <div class="order__shipping">
+            <ul class="progress">
+              <li class="progress__step">
+                <span class="progress__count progress__loupe"></span>
+                <span class="progress__lable">Lorem ipsum dolorsit amet</span>
+              </li>
+              <li class="progress__step">
+                <span class="progress__count progress__percent"></span>
+                <span class="progress__lable">Сonsecteturadipiscing elit</span>
+              </li>
+              <li class="progress__step">
+                <span class="progress__count progress__doc"></span>
+                <span class="progress__lable">Sed do eiusmod tempor</span>
+              </li>
+              <li class="progress__step">
+                <span class="progress__count progress__mail"></span>
+                <span class="progress__lable">Esse cillum doloreeu fugiat</span>
+              </li>
+              <li class="progress__step">
+                <span class="progress__count progress__money"></span>
+                <span class="progress__lable"
+                  >Excepteur sint occaecat cupidatat non proident</span
+                >
+              </li>
+            </ul>
+            <form action="endpoint" class="shipping-form">
+              <fieldset class="shipping-form__wrapper container">
+                <legend class=""></legend>
+                <select class="shipping-form__select">
+                  <option>Выберите тип системы</option>
+                  <option>Sed ut perspiciatis</option>
+                  <option>Nemo enim ipsam</option>
+                  <option>Et harum quidem</option>
+                  <option>Temporibus autem</option>
+                  <option>Itaque earum rerum</option>
+                </select>
+                <input
+                  class="shipping-form__input"
+                  type="text" name="email"
+                  placeholder="Ваш e-mail"
+                >
+                <input
+                  class="shipping-form__input"
+                  type="text" name="name"
+                  placeholder="Ваше имя"
+                >
+                <div class="shipping-form__discount">
+                  <label class="shipping-form__description" for="slider"
+                    >Sed ut perspiciatis, unde omnis iste natus</label
+                  >
+                  <input
+                    class="shipping-form__slider"
+                    type="range"
+                    id="slider"
+                    name="slider"
+                    min="0"
+                    max="100"
+                    step="1"
+                    value="75"
+                  >
+                </div>
+                <button class="shipping-form__button" type="button">Прикрепить файл</button>
+              </fieldset>
+            </form>
+          </div>
+          <button class="order__button" type="submit">Отправить</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <div class="footer__copy">
+          <span>&#xa9</span> 2018 «LoremIpsum.net»
+          <span>Все права защищены.</span>
+        </div>
+        <span class="footer__slash"></span>
+        <ul class="footer__partners">
+          <li class="footer__qiwimoney">Qiwi wallet</li>
+          <li class="footer__yandexmoney">Yandex Money</li>
+          <li class="footer__webmoney">Web Money</li>
+        </ul>
+        <span class="footer__slash"></span>
+        <ul class="footer__contacts">
+          <li>
+            <a
+              class="footer__contact footer__mail"
+              href="mailto:info@ipsum228.com"
+              >info@ipsum228.com</a
+            >
+          </li>
+          <li>
+            <a class="footer__contact footer__vk" href="#">Мы вконтакте</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
